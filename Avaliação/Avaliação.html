@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+    <link rel="stylesheet" href="Avaliação.css">
+</head>
+
+<body>
+    <form action="http://192.168.2.138:8090/av01" method="get" target="_blank">
+    <h1> Avaliação U01 M02 FS10</h1>
+    <div>
+        <label for="name">Nome Completo</label><br>
+        <input type="text" id="nomeCompleto" name="nomeCompleto">
+    </div>
+    <div>
+        <label for="email">Email</label><br>
+        <input type="e-mail" id="email" name="email">
+    </div>
+    <div>
+        <label for="marcadocarro">Marca de Carro</label>
+        <select id="marca" name="marca">
+            <option value="Bentley">Bentley</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Toyota">Toyota</option>
+        </select>
+    </div><br>
+    <div>
+        <label for="valocidadeMaxima">Velocidade Máxima (100 e 200)</label><br>
+        <input type="range" name="range" id="quantity-range-step-value"><br>
+    </div>
+    <div>
+        <label for="corpreferida">Cor Preferida</label><br>
+        <input type="radio" id="corpreferida" name="corpreferida" value="Vermelho">
+        <label for="corpreferida">Vermelho</label>
+        <input type="radio" id="corpreferida" name="corpreferida" value="Verde">
+        <label for="corpreferida">Verde</label>
+        <input type="radio" id="corpreferida" name="corpreferida" value="Azul">
+        <label for="corpreferida">Azul</label>
+    </div>
+    <div>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Cadastrar">
+    </div>
+    </form>
+
+</body>
+
+</html>
